@@ -12,22 +12,23 @@ def sanitize(n):
     return False
   else:
     return True
-
+    
 #counting method
 def count(n):
-  for x in range(0,n,3):
+  for x in range(1,n,2):
     print x
 
-#end of methods
-
+#asks for name and while loop makes sanitizes to make sure
+#name is not a number of a symbol
 var = raw_input("Hello, what is your name? ")
-if var.isalpha():
+while var.isalpha()== False:
+  var = raw_input("Please use letters for your name ")
+
+#uses the function to sanitize the input numbers 
+num = raw_input("Hello "+ var+", please choose a number between 5 to 100: ")
+while sanitize(check(num)) == False:
   num = raw_input("Please choose a number between 5 to 100: ")
-  if sanitize(check(num)):
-    count(check(num))
-  else:
-    print("Use a number between 5 and 100")
-else:
-  print("ERROR!Please use letter for your name")
 
-
+#run the counting loop and terminate app
+print("Starting my count to " + num + "...")
+count(check(num))
