@@ -1,4 +1,6 @@
-Gio Lapid
-Cyber Security
+#Gio Lapid
+#Cyber Security
 
-This includes a simple Counting App in Bash in Python
+Table of Contents
+i. count.sh - counting app in bash
+ii. count.py - counting app in python
