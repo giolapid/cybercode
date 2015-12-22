@@ -12,7 +12,7 @@ def sanitize(n):
     return False
   else:
     return True
-    
+
 #counting method
 def count(n):
   for x in range(1,n,2):
@@ -21,7 +21,7 @@ def count(n):
 #asks for name and while loop makes sanitizes to make sure
 #name is not a number of a symbol
 var = raw_input("Hello, what is your name? ")
-while var.isalpha()== False:
+while var.isalpha() == False:
   var = raw_input("Please use letters for your name ")
 
 #uses the function to sanitize the input numbers 
